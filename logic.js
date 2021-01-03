@@ -1,3 +1,6 @@
 $(function() {
-    $("p:eq(1)").hide();
+    var typed = new Typed('#openingText', {
+        strings: ["Hello World!<br>I'm Michael Rodyushkin"],
+        typeSpeed: 40
+      });
 });
