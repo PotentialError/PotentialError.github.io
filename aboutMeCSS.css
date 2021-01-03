@@ -1,0 +1,28 @@
+main, body, html {
+    height: 100%;
+    margin: 0;
+}
+#openingText {
+    position: absolute;
+    color: rgb(252, 252, 252);
+    padding: 5px;
+    bottom: 45%;
+    position: absolute;
+    font-size: 125px;
+    text-align: center;
+}
+.bg { 
+    /* The image used */
+    background-image: linear-gradient(rgba(0, 0, 128,0.5), rgba(0, 0, 128,0.5)), url("profile.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
