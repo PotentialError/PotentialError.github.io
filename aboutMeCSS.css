@@ -21,7 +21,7 @@ p { font-size: 0.85em !important; }
     /*font-size: 125px;*/
     font-family: 'Roboto Mono', monospace;
 }
-.test
+.fadeIn
 {
     opacity:0;
 }
@@ -40,6 +40,18 @@ p { font-size: 0.85em !important; }
     display: flex;
     justify-content: center;
   }
+#profile2 {
+    border-radius: 50%;
+    border: 0.5em solid rgb(15, 82, 186);
+    width: 20vw;
+    height: 20vw;
+}
+.aboutMeContent {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px){
     main, body {font-size:8px;}

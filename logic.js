@@ -5,22 +5,27 @@ $(function() {
       });
       /* Every time the window is scrolled ... */
 $(window).on("scroll", function(){
-
+  var bottom_of_object;
+  var bottom_of_window;
   /* Check the location of each desired element */
-  $(".test").each( function(i){
-    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-    var bottom_of_window = $(window).scrollTop() + $(window).height();
+  $(".fadeIn").each( function(i){
+    bottom_of_object = $(this).offset().top + $(this).outerHeight();
+    bottom_of_window = $(window).scrollTop() + $(window).height();
     /* If the object is completely visible in the window, fade it in */
     if( bottom_of_window > bottom_of_object ){
       $(this).animate({'opacity':'1'},500);
     }
   }); 
-  $(".test2").each( function(i){
-    var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-    var bottom_of_window = $(window).scrollTop() + $(window).height();
-    /* If the object is completely visible in the window, fade it in */
+  $(".slideFromLeft").each( function(i){
+    /* If the object is completely visible in the window, slide from left */
     if( bottom_of_window > bottom_of_object ){
       $(this).addClass("w3-animate-left")
+    }
+  });
+  $(".slideFromRight").each( function(i){
+    /* If the object is completely visible in the window, slide from right */
+    if( bottom_of_window > bottom_of_object ){
+      $(this).addClass("w3-animate-right")
     }
   });
 });
