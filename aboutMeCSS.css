@@ -21,7 +21,29 @@ p { font-size: 0.85em !important; }
     /*font-size: 125px;*/
     font-family: 'Roboto Mono', monospace;
 }
-.fadeIn
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
+.socialMediaIcon {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-top: -8px;
+    filter: invert(66%) sepia(6%) saturate(24%) hue-rotate(340deg) brightness(94%) contrast(92%);
+}
+.fadeIn, .slideFromLeft, .slideFromRight
 {
     opacity:0;
 }
