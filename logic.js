@@ -4,6 +4,7 @@ $(function() {
         typeSpeed: 40
       });
       /* Every time the window is scrolled ... */
+    var softwareClubLogoDone = false;
 $(window).on("scroll", function(){
   var bottom_of_object;
   var bottom_of_window;
@@ -34,5 +35,12 @@ $(window).on("scroll", function(){
       $(this).css("opacity", "1");
     }
   });
+  if(($(window).scrollTop() + $(window).height()) > ($("#softwareClubLogo").offset().top + $("#softwareClubLogo").height()/2) && !softwareClubLogoDone) {
+    softwareClubLogoDone = true;
+    setTimeout(changeSoftwareClubLogo, 1000);
+  }
 });
 });
+function changeSoftwareClubLogo() {
+  $("#softwareClubLogo").attr("src", "softwareClubLogo.png");
+}

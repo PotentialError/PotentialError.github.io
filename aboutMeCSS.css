@@ -62,9 +62,13 @@ a:link {
     display: flex;
     justify-content: center;
   }
-#profile2 {
+.aboutMeContentImages {
     border-radius: 50%;
     border: 0.5em solid rgb(15, 82, 186);
+    width: 20vw;
+    height: 20vw;
+}
+#softwareClubLogo {
     width: 20vw;
     height: 20vw;
 }
