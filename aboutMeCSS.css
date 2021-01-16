@@ -76,7 +76,7 @@ a:link {
     margin-left: 5vw;
     margin-right: 5vw;
     margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-bottom: 5vh;
 }
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px){
