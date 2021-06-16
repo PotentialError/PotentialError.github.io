@@ -21,21 +21,10 @@ p { font-size: 0.85em !important; }
     /*font-size: 125px;*/
     font-family: 'Roboto Mono', monospace;
 }
-a:link {
+a, a:visited, a:hover, a:active, a:link {
+    color: white;
     text-decoration: none;
-  }
-  
-  a:visited {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: none;
-  }
-  
-  a:active {
-    text-decoration: none;
-  }
+}
 .socialMediaIcon {
     width: 20px;
     height: 20px;
@@ -62,6 +51,12 @@ a:link {
     display: flex;
     justify-content: center;
   }
+.imageCenter {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border: 0.5em solid rgb(15, 82, 186);
+}  
 .aboutMeContentImages {
     border-radius: 50%;
     border: 0.5em solid rgb(15, 82, 186);
@@ -80,13 +75,13 @@ a:link {
 }
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px){
-    main, body {font-size:8px;}
+    main, body {font-size:12px;}
     #title {top: 35%;}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 600px) {
-    main, body {font-size:12px;}
+    main, body {font-size:15px;}
     #title {top: 35%;}
 }
 
