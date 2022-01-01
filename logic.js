@@ -35,10 +35,10 @@ $(window).on("scroll", function(){
       $(this).css("opacity", "1");
     }
   });
-  if(($(window).scrollTop() + $(window).height()) > ($("#softwareClubLogo").offset().top + $("#softwareClubLogo").height()/2) && !softwareClubLogoDone) {
-    softwareClubLogoDone = true;
-    setTimeout(changeSoftwareClubLogo, 1000);
-  }
+  // if(($(window).scrollTop() + $(window).height()) > ($("#softwareClubLogo").offset().top + $("#softwareClubLogo").height()/2) && !softwareClubLogoDone) {
+    //softwareClubLogoDone = true;
+    //setTimeout(changeSoftwareClubLogo, 1000);
+  //}
 });
 });
 function changeSoftwareClubLogo() {

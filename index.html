@@ -1,112 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Home</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="./logic.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="aboutMeCSS.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <script src="typed.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Logos for NavBar -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Associated CSS -->
+        <link rel="stylesheet" href="mainPageCSS.css">
+        <!-- W3 CSS Library -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- JQuery Import -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Associated Script -->
+        <script src="./logic.js"></script>
+        <!-- Script for Typed Style -->
+        <script src="typed.js"></script>
+        <!-- Bootstrap Requirements-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header>
-          <nav class="w3-top">
-            <div class="w3-bar w3-black w3-xlarge">
-              <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-              <a href="./programming.html" class="w3-bar-item w3-button">Programming Portfolio</a>
-              <div>
-                <a href="https://github.com/PotentialError" class="w3-bar-item w3-button w3-right" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                <a href="https://www.linkedin.com/in/michael-rodyushkin/" class="w3-bar-item w3-button w3-right" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
-              </div>
+    <!-- NavBar -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="./programming.html">Programming Portfolio</a>
+                </ul>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <div class="row">
+                        <a class="nav-link mr-4 ml-3" href="https://github.com/PotentialError" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a class="nav-link mr-4" href="https://www.linkedin.com/in/michael-rodyushkin/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></i></a>
+                    </div>
+                </ul>
             </div>
           </nav>
-            <!--<nav class="navbar navbar-inverse navbar-fixed-top">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand">Michael Rodyushkin</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li class="active"><a href="./index.html">Home</a></li>
-                    <li><a href="./programming.html">Programming Experience</a></li>
-                  </ul>
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"></a></li>
-                  </ul>
+    </header>
+
+    <body>
+        <!-- Title Jumbotron -->
+        <div class="jumbotron text-center rounded-0 titleBackground" style="height:100vh;">
+            <h1 class="text-white my-auto" id="title" ><span id="openingText"></span></h1>
+        </div>
+
+        <!-- About Me Section -->
+
+        <div class="container-fluid" style="margin-top: 30px;">
+            <!-- Intro Section -->
+            <div class="row flex-nowrap mt-5 mb-5">
+                <div class="col-sm-4 my-auto">
+                    <img class = "slideFromLeft rounded-circle aboutMe mx-auto d-block" src="profile2.jpg">
                 </div>
-              </nav> -->
-        </header>
-        <main>
-            <div class="bg" style="text-align: center;">
-                <h1 id="title"><span id="openingText"></span></h1>
+                <div class="col-sm-8 my-auto">
+                    <h2 class="fadeIn">Nice to meet you!</h1>
+                    <h3 class="slideFromRight"><small>I'm Michael — passionate self-guided programmer, student leader, 
+                        dedicated community volunteer, bilingual speaker, and amateur chess and soccer player. My main goal is to bring STEM activities 
+                        to Northeastern Pennsylvania.</small></h3>
+                </div>
             </div>
-            <div class="aboutMeContent">
-              <div class="w3-container w3-cell w3-cell-middle">
-                <h3 class = "fadeIn">Nice to meet you!</h3>
-                <p class="slideFromLeft">I'm Michael — passionate self-guided programmer, bilingual, student leader, 
-                  dedicated community volunteer, and amateur chess and soccer player. My main goal is to bring STEM activities 
-                  to Northeastern Pennsylvania.</p>
-              </div>
-              <div class="w3-container w3-cell w3-cell-middle">
-                <img class="slideFromRight aboutMeContentImages" src="profile2.jpg">
-              </div>
+            <hr class = "border border-primary">
+
+            <!-- My Programming Story -->
+            <div class="row flex-nowrap mt-5 mb-5">
+                <div class="col-sm-8 my-auto">
+                    <h2 class="fadeIn">My Programming Story</h1>
+                    <h3 class="slideFromLeft"><small>I started programming at the age of 10 on Scratch. Since then I have learned object-oriented 
+                        programming (Java, C#, Kotlin, and Python), database management (SQL), and digital design (Unity, XML, HTML, CSS, and Javascript).
+                        My current focus is exploring the field of robotics through ROS2, perception, and machine learning.</small></h3>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <img class="rounded-circle aboutMe mx-auto d-block slideFromRight" src="michaelCoding.jpg">
+                </div>     
             </div>
-            <div class="aboutMeContent">
-              <div class="w3-container w3-cell w3-cell-middle">
-                <img class="slideFromLeft aboutMeContentImages" src="michaelCoding.jpg">
-              </div>
-              <div class="w3-container w3-cell w3-cell-middle">
-                <h3 class = "fadeIn">Programming Experience</h3>
-                <p class="slideFromRight">I started programming at the age of 10 on Scratch. Since then I have learned object-oriented 
-                  programming (Java, C#, Kotlin, and Python), database management (SQL), and digital design (Unity, XML, HTML, CSS, and Javascript).
-                  My current focus is learning how to effectively connect people with software through Unity, Android Studio, and HTML.
-                </p>
-              </div>
+            <hr class = "border border-primary">
+
+            <!-- Academics Section -->
+            <div class="row flex-nowrap mt-5 mb-5">
+                <div class="col-sm-4 my-auto">
+                    <img class = "slideFromLeft rounded-circle aboutMe mx-auto d-block" src="GTLogo.png">
+                </div>
+                <div class="col-sm-8 my-auto">
+                    <h2 class="fadeIn">Academics</h1>
+                    <h3 class="slideFromRight"><small> I am currently studying computer science with a concentration in machine learning and devices
+                        as an undergraduate at the Georgia Institute of Technology. Previously, I have I recieved my high school diploma from 
+                        Abington Heights High School in Clarks Summit, PA. While there, I took three years of computer science courses learning 
+                        Java, Kotlin, XML, and Android-app making and became the Class of 2021 valedictorian. My senior year I was a TA for 
+                        an Android course.</small></h3>
+                </div>
             </div>
-            <div class="aboutMeContent">
-              <div class="w3-container w3-cell w3-cell-middle">
-                <h3 class = "fadeIn">Academics</h3>
-                <p class="slideFromRight">I recieved my high school education from Abington Heights High School in Clarks Summit, PA. While there,
-                   I took three years of computer science courses learning Java, Kotlin, XML, and Android-app making. My senior year I was a TA for 
-                   an Android course. Over my entire high school career, I took all honors courses and <b>nine</b> Advanced Placement courses scoring 4 or 
-                   higher in all of them and recieving the AP Scholar with Distinction award and became my class' <b>valedictorian</b>.</p>
-              </div>
-              <div class="w3-container w3-cell w3-cell-middle">
-                <img class="slideFromLeft aboutMeContentImages" src="AbingtonLogo.png">
-              </div>
+            <hr class = "border border-primary">
+
+            <!-- Coding Clubs -->
+            <div class="row flex-nowrap mt-5 mb-5">
+                <div class="col-sm-8 my-auto">
+                    <h2 class="fadeIn">Coding Clubs</h1>
+                    <h3 class="slideFromLeft"><small> Besides the many side-projects I work on for experimenting with coding languages and competing in
+                        competitions found in my <a href="./programming.html" target="_blank"> Programming Portfolio</a>, I am a member and/or leader of
+                        many coding-based organizations. At Georgia Tech, I am a current software member of the <a href="https://robojackets.org/" target="_blank"> RoboJackets</a>,
+                        <a href="https://marinerobotics.gtorg.gatech.edu/" target="_blank">Marine Robotics</a>, and <a href="https://vgdev.gtorg.gatech.edu/" target="_blank">VGDev</a> clubs.
+                        During my high school career, I was president and co-founder of one of the largest clubs in the school,
+                        <a href="https://sites.google.com/view/ah-software/home?authuser=0" target="_blank">Software Club</a>, which brought
+                        together programming, art, and engineering students to apply their knowledge practically to large creative and community
+                        computer science projects.</small></h3>
+                </div>
+                <div class="col-sm-4 my-auto">
+                    <img class="rounded-circle aboutMe mx-auto d-block slideFromRight" src="softwareClubLogoGif.gif">
+                </div>     
             </div>
-            <div class="aboutMeContent">
-              <div class="w3-container w3-cell w3-cell-middle">
-                <img id= "softwareClubLogo" src="softwareClubLogoGif.gif">
-              </div>
-              <div class="w3-container w3-cell w3-cell-middle">
-                <h3 class = "fadeIn">Student Leadership</h3>
-                <p class="slideFromRight">During my high school career, I have participated and led multiple school and community 
-                  organizations from being VP of the debate club to refereeing my local youth soccer league. 
-                  My largest endeavour was the Software Club which I was president of and brought together programming, art, 
-                  and engineering students to apply their knowledge practically to large creative and community projects. 
-                  More information about Software Club can be found <b><a href="https://sites.google.com/view/ah-software/home?authuser=0" target="_blank">
-                  here</a></b>.</p>
-              </div>
+            <hr class = "border border-primary">
+
+            <!-- Languages -->
+            <div class="row flex-nowrap mt-5 mb-5">
+                <div class="col-sm-4 my-auto">
+                    <img class = "slideFromLeft rounded-circle aboutMe mx-auto d-block" src="AmericanRussianFlag.jpg">
+                </div>
+                <div class="col-sm-8 my-auto">
+                    <h2 class="fadeIn">Languages</h1>
+                    <h3 class="slideFromRight"><small> Coming from a Russian immigrant family and living in the United States all my life, I am fluent in both English and Russian.
+                        I can listen, speak, and write in both languages.</small></h3>
+                </div>
             </div>
-            <div class="aboutMeContent">
-              <div class="w3-container w3-cell w3-cell-middle">
-                <h3 class = "fadeIn">Languages</h3>
-                <p class="slideFromLeft">Coming from a Russian immigrant family and living in the United States all my life, I am fluent in both English and Russian.
-                  I can listen, speak, and write in both languages.</p>
-              </div>
-              <div class="w3-container w3-cell w3-cell-middle">
-                <img class="slideFromRight aboutMeContentImages" src="AmericanRussianFlag.jpg">
-              </div>
-            </div>
-        </main>
-            
+        </div>
     </body>
 </html>
