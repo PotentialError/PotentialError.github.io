@@ -21,7 +21,7 @@ $(window).on("scroll", function(){
     bottom_of_object = $(this).offset().top + $(this).height();
     bottom_of_window = $(window).scrollTop() + $(window).height();
     /* If the object is completely visible in the window, slide from left */
-    if( bottom_of_window > bottom_of_object ){
+    if( bottom_of_window >= bottom_of_object ){
       $(this).addClass("w3-animate-left");
       $(this).css("opacity", "1");
     }
