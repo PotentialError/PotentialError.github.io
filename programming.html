@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Programming Portfolio</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <title>Home</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Logos for NavBar -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="aboutMeCSS.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Associated CSS -->
+        <link rel="stylesheet" href="programmingCSS.css">
+        <!-- W3 CSS Library -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- JQuery Import -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Associated Script -->
+        <script src="./logic.js"></script>
+        <!-- Script for Typed Style -->
+        <script src="typed.js"></script>
+        <!-- Bootstrap Requirements-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <header>
-          <nav class="w3-top">
-            <div class="w3-bar w3-black w3-xlarge">
-              <a href="./index.html" class="w3-bar-item w3-button">Home</a>
-              <a href="./programming.html" class="w3-bar-item w3-button w3-light-grey">Programming Portfolio</a>
-              <a href="https://github.com/PotentialError" class="w3-bar-item w3-button w3-right" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-              <a href="https://www.linkedin.com/in/michael-rodyushkin/" class="w3-bar-item w3-button w3-right" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></i></a>
-            </nav>
-        </header>
-        <main style="margin-top:70px">
-            <section>
-                <h2>Programming Languages I Know:</h2>
-                <ul>
-                    <li>Java</li>
-                    <li>Kotlin</li>
-                    <li>Python</li>
-                    <li>XML</li>
-                    <li>C#</li>
-                    <li>HTML</li>
+    <!-- NavBar -->
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="#">Programming Portfolio</a>
                 </ul>
-                <a href="https://github.com/PotentialError" target="_blank">My Github Page</a>
-            </section>
-        </main>
+                <ul class="navbar-nav my-2 my-lg-0">
+                    <div class="row">
+                        <a class="nav-link mr-4 ml-3" href="https://github.com/PotentialError" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a class="nav-link mr-4" href="https://www.linkedin.com/in/michael-rodyushkin/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></i></a>
+                    </div>
+                </ul>
+            </div>
+          </nav>
+    </header>
+
+    <body>
+        <section>
+            <h2>Programming Languages I Know:</h2>
+            <ul>
+                <li>Java</li>
+                <li>Kotlin</li>
+                <li>Python</li>
+                <li>XML</li>
+                <li>C#</li>
+                <li>HTML</li>
+            </ul>
+            <a href="https://github.com/PotentialError" target="_blank">My Github Page</a>
+        </section>
     </body>
 </html>
