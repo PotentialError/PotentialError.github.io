@@ -5,15 +5,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!-- Logos for NavBar -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
         <!-- Associated CSS -->
-        <link rel="stylesheet" href="programmingCSS.css">
+        <link rel="stylesheet" href="programCSS.css">
         <!-- W3 CSS Library -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- JQuery Import -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Associated Script -->
-        <script src="./logic.js"></script>
+        <script src="./logicProgram.js"></script>
         <!-- Script for Typed Style -->
         <script src="typed.js"></script>
         <!-- Bootstrap Requirements-->
@@ -35,30 +35,101 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <a class="nav-link" href="./index.html">Home</a>
-                    <a class="nav-link" href="#">Programming Portfolio</a>
+                    <a class="nav-link">Programming Portfolio</a>
                 </ul>
                 <ul class="navbar-nav my-2 my-lg-0">
                     <div class="row">
-                        <a class="nav-link mr-4 ml-3" href="https://github.com/PotentialError" target="_blank"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-                        <a class="nav-link mr-4" href="https://www.linkedin.com/in/michael-rodyushkin/" target="_blank"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></i></a>
+                        <a class="nav-link mr-4 ml-3" href="https://github.com/PotentialError" target="_blank"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a class="nav-link mr-4" href="https://www.linkedin.com/in/michael-rodyushkin/" target="_blank"><i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i></i></a>
+                        <a class="nav-link mr-4" href="https://potentialerror.itch.io/" target="_blank"><i class="fab fa-itch-io fa-lg"></i></a>
                     </div>
                 </ul>
             </div>
           </nav>
     </header>
 
-    <body>
-        <section>
-            <h2>Programming Languages I Know:</h2>
-            <ul>
-                <li>Java</li>
-                <li>Kotlin</li>
-                <li>Python</li>
-                <li>XML</li>
-                <li>C#</li>
-                <li>HTML</li>
-            </ul>
-            <a href="https://github.com/PotentialError" target="_blank">My Github Page</a>
-        </section>
+    <body class="container-fluid">
+        <!--Page Title-->
+        <div class="section row text-center" style="min-height:40vh; background-image: linear-gradient(141deg,rgba(0, 0, 128,0.5), rgba(0, 0, 77, 0.5)), url('Assets/codeBackground.PNG');">
+            <h1 class="title text-white my-auto"><span id="openingProgram"></span></h1>
+        </div>
+
+        <!-- Debate Tracker App -->
+        <a href="https://github.com/PotentialError/DebateTrackerApp" target="_blank">
+            <div class="section row text-center" style="background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);">
+                <div class="col-sm-8 my-auto">
+                    <div class="row flex-nowrap mx-auto mb-3">
+                        <img src="Assets/debateTrackerSquareLogo.png" class="appIcon my-auto">
+                        <h1 class="text-white my-auto">Debate Tracker App</h1>
+                    </div>
+                    <h3 class="text-white">Android app for NSDA and NCFL high school debaters to track their debate rounds</h3>
+                </div>
+                <div class="col-sm-4 my-auto mx-auto" style="padding-top: 20px; margin-bottom: 100px;">
+                    <img src="Assets/debateTrackerScreenshot.jpg" class="screenshot">
+                </div>
+            </div>
+        </a>
+
+        <!-- Ball Game -->
+        <a href="https://github.com/PotentialError/BallGame" target="_blank">
+            <div class="section row text-center" style="background-image: linear-gradient(141deg,rgba(0, 0, 128,0.5), rgba(0, 0, 77, 0.5)), url('Assets/RollABallScreenshot.PNG');">
+                <div class="col-sm-8 my-auto">
+                    <h1 class="text-white my-auto">Ball Game</h1>
+                    <h3 class="text-white">3D Unity game about the adventures of a ball and his coins</h3>
+                </div>
+            </div>
+        </a>
+
+        <!-- DiningDetective -->
+        <a href="https://github.com/PotentialError/DiningDetective" target="_blank">
+            <div class="section row text-center" style="background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);">
+                <div class="col-sm-8 my-auto">
+                    <div class="row flex-nowrap mx-auto mb-3">
+                        <img src="Assets/diningDetectiveSquareLogo.png" class="appIcon my-auto">
+                        <h1 class="text-white my-auto">Dining Detective</h1>
+                    </div>
+                    <h3 class="text-white">Android app that uses a neural network to predict dining hall conditions at Georgia Tech</h3>
+                    <p class="text-white">(Submission for HackGT 8)</p>
+                </div>
+                <div class="col-sm-4 my-auto mx-auto" style="padding-top: 20px; margin-bottom: 100px;">
+                    <img src="Assets/DiningDetectiveScreenshot.jpg" class="screenshot">
+                </div>
+            </div>
+        </a>
+
+        <!-- Haywire -->
+        <a href="https://github.com/PotentialError/GMTK2020GameJam" target="_blank">
+            <div class="section row text-center" style="background-image: linear-gradient(141deg,rgba(0, 0, 128,0.5), rgba(0, 0, 77, 0.5)), url('Assets/hayWireScrrenshot.PNG');">
+                <div class="col-sm-8 my-auto">
+                    <h1 class="text-white my-auto">Haywire</h1>
+                    <h3 class="text-white">2D Unity platformer game about a robot that has gone out of control</h3>
+                    <p class = "text-white">(Submission for GMTK Game Jam 2020)</p>
+                </div>
+            </div>
+        </a>
+
+        <!-- MikeyBot -->
+        <a href="https://github.com/PotentialError/DiscordBotTesting" target="_blank">
+            <div class="section row text-center" style="background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);">
+                <div class="col-sm-8 my-auto">
+                    <div class="row flex-nowrap mx-auto mb-3">
+                        <img src="Assets/MikeyBotLogo.PNG" class="appIcon my-auto">
+                        <h1 class="text-white my-auto">MikeyBot</h1>
+                    </div>
+                    <h3 class="text-white">Discord bot that uses Java Discord API to provide users useful features for their server</h3>
+                </div>
+                <div class="col-sm-4 my-auto mx-auto" style="padding-top: 20px; margin-bottom: 100px;">
+                    <img src="Assets/MikeyBot.gif" class="screenshot">
+                </div>
+            </div>
+        </a>
+
+        <!--End Title-->
+        <div class="section row text-center" style="min-height:30vh; background-image: linear-gradient(141deg,rgba(0, 0, 128,0.5), rgba(0, 0, 77, 0.5)), url('Assets/codeBackground.PNG');">
+            <div class="col my-auto">
+                <h2 class="text-white">More of my work can be found on:</h2>
+                <h2><a href="https://github.com/PotentialError"> My Github <i class="fab fa-github fa-lg" aria-hidden="true"></i></a></h2>
+            </div>
+        </div>
     </body>
 </html>
