@@ -1,97 +1,24 @@
-img.aboutMe {
-    object-fit: cover;
-    box-shadow: -3px 3px 5px 3px #131313;
-}
-.title {
-    font-size: 5em !important;
-    /*font-size: calc(100% + 3vw + 3vh);*/
-    /*font-size: 125px;*/
-    font-family: 'Roboto Mono', monospace;
-    text-align: center;
-}
-h1 {
-    font-size: 4em;
-}
-h2 {
-    font-size: 2em !important;
-    color: cornflowerblue !important;
-}
-h3 {
-    font-size: 1.3em !important;
-}
+@media (max-width: 768px) {
+    .titleBackground { 
+        background: linear-gradient(rgba(4, 4, 63,0.9), rgba(4, 4, 63,0.5)), url("Assets/profile.jpg"); 
+    }
+  }
+  @media (min-width: 769px) {
+    .titleBackground { 
+        background: linear-gradient(50deg, rgb(4, 4, 63) 10%,  rgb(4, 4, 63, 0.05) 100%), linear-gradient(90deg, rgb(4, 4, 63, 0.7) 0%,  rgb(0, 0, 128, 0.05) 100%), url("Assets/profileAlt.jpg"); 
+    }
+  }
 .titleBackground { 
-    /* The image used */
-    background-image: linear-gradient(rgba(0, 0, 128,0.5), rgba(0, 0, 128,0.5)), url("Assets/profile.jpg");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100vh; 
     background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-      /* Create the parallax scrolling effect */
     background-attachment: fixed;
+    background-repeat: no-repeat;
     background-position: center;
 }
-.fadeIn, .slideFromLeft, .slideFromRight
-{
-    opacity:0;
-}
-#title {
-    position: absolute;
-    color: rgb(252, 252, 252);
-    padding: 5px;
-    top: 15%;
-    font-size: 3.8em !important;
-    /*font-size: calc(100% + 3vw + 3vh);*/
-    /*font-size: 125px;*/
+
+
+.title {
+    font-size: 12vmin;
     font-family: 'Roboto Mono', monospace;
-}
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px){
-    div.container-fluid, .jumbotron {font-size: 12px;}
-    img.aboutMe, img.image-blurred-edge {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media (min-width: 600px) {
-    div.container-fluid, .jumbotron {font-size: 15px;}
-    img.aboutMe {
-        height: 150px;
-        width: 150px;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media (min-width: 768px) {
-    div.container-fluid, .jumbotron {font-size: 20px;}
-    img.aboutMe {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-    div.container-fluid, .jumbotron {font-size: 25px;}
-    img.aboutMe {
-        height: 250px;
-        width: 250px;
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    div.container-fluid, .jumbotron {font-size: 30px;}
-    img.aboutMe {
-        height: 300px;
-        width: 300px;
-    }
+    color:aliceblue;
 }
