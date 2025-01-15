@@ -32,3 +32,5 @@
     font-family: 'Roboto Mono', monospace;
     color:aliceblue;
 }
+
+.whiteLinks:hover, .whiteLinks:active, .whiteLinks:visited { color: #c8e1eb; }
