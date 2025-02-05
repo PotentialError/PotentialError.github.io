@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-position: center;
 }
-.bio {
+#bio {
     font-size: 20px;
     font-family: 'Calibri', serif;
     background: linear-gradient(141deg, rgb(55, 103, 121) 0%, rgb(64, 121, 140) 71%, rgb(55, 103, 121) 100%);;
@@ -33,4 +33,13 @@
     color:aliceblue;
 }
 
-.whiteLinks:hover, .whiteLinks:active, .whiteLinks:visited { color: #c8e1eb; }
+
+.whiteLinks {
+    color: white; 
+    text-decoration: underline;
+}
+
+.whiteLinks:hover {
+    color:  rgb(180, 180, 180);
+    text-decoration: none !important;
+}

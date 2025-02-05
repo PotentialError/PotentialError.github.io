@@ -13,9 +13,11 @@ h2 {
   font-family: 'Roboto Mono', monospace !important;
   font-size: 4em !important;
 }
+
 a {
   text-decoration: none !important;
 }
+
 .section {
     min-height:50vh;
     /* Center and scale the image nicely */
@@ -33,6 +35,15 @@ a {
     padding-bottom: 20px;
     padding-top: 20px;
 }
+
+.solid-background {
+    background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%);
+}
+
+.pop:hover {
+    transform: scale(1.1);
+}
+
 .screenshot {
   box-shadow: -3px 3px 5px 3px #131313;
   border-radius: 15px;
@@ -41,8 +52,19 @@ a {
   width: auto;
   height: auto;
 }
+.screenshot:hover {
+    transform: scale(1.05);
+}
 .appIcon {
   height: 15vmin;
   width: auto;
 }
-.whiteLinks:hover, .whiteLinks:active, .whiteLinks:visited { color: #c8e1eb; }
+
+.screenshot:hover {
+    transform: scale(1.05);
+}
+
+.whiteLinks:hover, .whiteLinks:visited { color: white; }
+.whiteLinks:hover {
+    color:  rgb(180, 180, 180);
+}
